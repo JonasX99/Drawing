@@ -1,16 +1,36 @@
-
-let linebool = true;
+//draw line
+let buttonline;
+let linebool = false;
 let myboolean = false;
 let timesbuttonpressed = 0;
 let linex1 = 0;
 let liney1 = 0;
 let linex2 = 0;
 let liney2 = 0;
+//draw circle
+let buttoncircle;
 
 function setup() {
   createCanvas(800, 800);
   background(200);
   noLoop();
+  //drawline
+  buttonline = createButton('draw line');
+  buttonline.position(19, 19);
+  buttonline.mouseReleased(fbuttonline);
+  
+  //drawcircle
+  buttoncircle = createButton('draw circle');
+  buttoncircle.position(100,19);
+  buttoncircle.mouseReleased(fbuttoncircle);
+}
+
+function fbuttonline(){
+  linebool = true;
+}
+
+function fbuttoncircle(){
+  linebool = false;
 }
 
 function draw() {
