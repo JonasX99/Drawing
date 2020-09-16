@@ -1,0 +1,12 @@
+body{
+    overflow: hidden;
+}
+
+#Introtext{
+    font-family: sans-serif;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    padding-top: 1%;
+    text-align: center;
+}

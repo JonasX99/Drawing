@@ -7,8 +7,8 @@ let linex2 = 0;
 let liney2 = 0;
 
 function setup() {
-  createCanvas(window.innerWidth - 100, window.innerHeight - 100);
-  background(200);
+  createCanvas(window.innerWidth, window.innerHeight);
+  background(250);
   noLoop();
 }
 
